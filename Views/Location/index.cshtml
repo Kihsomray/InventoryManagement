@@ -1,0 +1,33 @@
+@model List<Location>
+
+<h2>Location</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Location ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var location in Model)
+        {
+            <tr>
+                <td>@location.LocationID</td>
+                <td>@location.Name</td>
+                <td>@location.Address</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@location.LocationID">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@location.LocationID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@location.LocationID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
