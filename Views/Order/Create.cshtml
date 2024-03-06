@@ -5,7 +5,7 @@
 <form asp-action="Create" method="post">
     <div class="form-group">
         <label asp-for="CustomerID"></label>
-        <select asp-for="CustomerID" asp-items="@(new SelectList(ViewBag.Customers, "CustomerID", "Name"))" class="form-control">
+        <select asp-for="CustomerID" asp-items="@(new SelectList(ViewBag.Customers, "CustomerID", "FullName"))" class="form-control">
             <option value="">Select Customer</option>
         </select>
         <span asp-validation-for="CustomerID" class="text-danger"></span>

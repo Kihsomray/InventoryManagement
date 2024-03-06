@@ -17,12 +17,18 @@ public class LocationController : Controller
     }
 
     // GET: Location/Details/5
-    public IActionResult Details(int? id)
-    {
+    public IActionResult Details(int? id) {
         if (id == null) return NotFound();
         var location = _context.Location.FirstOrDefault(m => m.LocationID == id);
         if (location == null) return NotFound();
-        return View(location);
+        var employees = _context.Employee.Where(e => e.LocationID == id).ToList();
+        var inventory = _context.Inventory.Where(i => i.LocationID == id).ToList();
+        var locationViewModel = new LocationViewModel {
+            Location = location,
+            Employees = employees,
+            Inventory = inventory
+        };
+        return View(locationViewModel);
     }
 
     // GET: Location/Create
@@ -51,11 +57,11 @@ public class LocationController : Controller
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Edit(int id, [Bind("LocationID,Name,Address")] Location location) {
-        if (id != location.LocationID)return NotFound();
+        if (id != location.LocationID) return NotFound();
         try {
             _context.Update(location);
             _context.SaveChanges();
-        } catch (DbUpdateConcurrencyException) {  
+        } catch (DbUpdateConcurrencyException) {
             if (!LocationExists(location.LocationID)) return NotFound();
         }
         return RedirectToAction(nameof(Index));

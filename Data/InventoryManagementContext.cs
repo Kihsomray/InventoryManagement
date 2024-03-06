@@ -1,11 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using InventoryManagement.Models;
 
 namespace InventoryManagement.Data {
     public class InventoryManagementContext : DbContext {
 
-        readonly string _connectionString = "";
+        readonly string _connectionString = "Server=localhost;Port=3306;Database=InventoryManagement;User=root;Password=password;";
         public DbSet<Location> Location { get; set; }
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Supplier> Supplier { get; set; }
