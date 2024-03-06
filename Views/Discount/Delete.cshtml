@@ -1,0 +1,29 @@
+@model Discount
+
+<h2>Delete Discount</h2>
+<br>
+<h3>Are you sure you want to delete this discount?</h3>
+<div>
+    <h4>Discount</h4>
+    <hr />
+    <dl class="row">
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Percentage</dt>
+        <dd>@Model.Percentage</dd>
+        <dt>Start Date</dt>
+        <dd>@Model.StartDate</dd>
+        <dt>End Date</dt>
+        <dd>@Model.EndDate</dd>
+        <dt>Quantity Used</dt>
+        <dd>@Model.QuantityUsed</dd>
+        <dt>Usage Limit</dt>
+        <dd>@Model.UsageLimit</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-id="@Model.ItemID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

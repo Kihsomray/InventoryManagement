@@ -12,10 +12,17 @@ namespace InventoryManagement.Data {
         public DbSet<Item> Item { get; set; }
         public DbSet<Expense> Expense { get; set; }
         public DbSet<Inventory> Inventory { get; set; }
+        public DbSet<Discount> Discount { get; set; }
+        public DbSet<Customer> Customer { get; set; }
         
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.Entity<Inventory>().HasKey(e => new { e.LocationID, e.ItemID });
+        }
+
     }
 }

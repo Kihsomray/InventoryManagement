@@ -1,0 +1,35 @@
+@model List<Discount>
+
+<h2>Discounts</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item ID</th>
+            <th>Percentage</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Quantity Used</th>
+            <th>Usage Limit</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var discount in Model) {
+            <tr>
+                <td>@discount.ItemID</td>
+                <td>@discount.Percentage</td>
+                <td>@discount.StartDate</td>
+                <td>@discount.EndDate</td>
+                <td>@discount.QuantityUsed</td>
+                <td>@discount.UsageLimit</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@discount.ItemID">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@discount.ItemID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@discount.ItemID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Discount</a></p>

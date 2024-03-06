@@ -5,11 +5,11 @@ namespace InventoryManagement.Models {
 
     public class Inventory {
 
-        [Key]
+        //[Key]
         [Column(Order = 0)]
         public int LocationID { get; set; }
 
-        [Key]
+        //[Key]
         [Column(Order = 1)]
         public int ItemID { get; set; }
 

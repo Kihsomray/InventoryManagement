@@ -1,0 +1,42 @@
+@model Discount
+
+<h2>Create Discount</h2>
+<br>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="ItemID"></label>
+        <select asp-for="ItemID" asp-items="@(new SelectList(ViewBag.Items, "ItemID", "Name"))" class="form-control">
+            <option value="">Select Item</option>
+        </select>
+        <span asp-validation-for="ItemID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Percentage"></label>
+        <input asp-for="Percentage" class="form-control" />
+        <span asp-validation-for="Percentage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="StartDate"></label>
+        <input asp-for="StartDate" class="form-control" type="date" />
+        <span asp-validation-for="StartDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EndDate"></label>
+        <input asp-for="EndDate" class="form-control" type="date" />
+        <span asp-validation-for="EndDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="QuantityUsed"></label>
+        <input asp-for="QuantityUsed" class="form-control" />
+        <span asp-validation-for="QuantityUsed" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UsageLimit"></label>
+        <input asp-for="UsageLimit" class="form-control" />
+        <span asp-validation-for="UsageLimit" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+<p><a asp-action="Index">Back to List</a></p>

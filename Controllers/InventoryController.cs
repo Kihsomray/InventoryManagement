@@ -91,4 +91,5 @@ public class InventoryController : Controller {
     private bool InventoryItemExists(int locationId, int itemId) {
         return _context.Inventory.Any(e => e.LocationID == locationId && e.ItemID == itemId);
     }
+
 }

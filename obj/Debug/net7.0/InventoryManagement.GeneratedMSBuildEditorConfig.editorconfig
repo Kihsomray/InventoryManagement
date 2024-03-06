@@ -16,6 +16,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/mike/Documents/Code/dotnet/InventoryManagement
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Discount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY291bnQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Discount/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY291bnQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Discount/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY291bnQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Discount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY291bnQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Discount/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY291bnQvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

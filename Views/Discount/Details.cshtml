@@ -1,0 +1,23 @@
+@model Discount
+
+<h2>Discount Details</h2>
+<br>
+<div>
+    <h4>Discount</h4>
+    <hr />
+    <dl class="row">
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Percentage</dt>
+        <dd>@Model.Percentage</dd>
+        <dt>Start Date</dt>
+        <dd>@Model.StartDate</dd>
+        <dt>End Date</dt>
+        <dd>@Model.EndDate</dd>
+        <dt>Quantity Used</dt>
+        <dd>@Model.QuantityUsed</dd>
+        <dt>Usage Limit</dt>
+        <dd>@Model.UsageLimit</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

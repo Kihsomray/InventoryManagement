@@ -1,0 +1,29 @@
+@model Customer
+
+<h2>Delete Customer</h2>
+<br>
+<h3>Are you sure you want to delete this customer?</h3>
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt>Customer ID</dt>
+        <dd>@Model.CustomerID</dd>
+        <dt>Full Name</dt>
+        <dd>@Model.FullName</dd>
+        <dt>Email</dt>
+        <dd>@Model.Email</dd>
+        <dt>Phone Number</dt>
+        <dd>@Model.PhoneNumber</dd>
+        <dt>Address</dt>
+        <dd>@Model.Address</dd>
+        <dt>Date Of Creation</dt>
+        <dd>@Model.DateOfCreation</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-id="@Model.CustomerID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>
