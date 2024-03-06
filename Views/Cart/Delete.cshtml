@@ -1,0 +1,23 @@
+@model Cart
+
+<h2>Delete Cart Item</h2>
+<br>
+<h3>Are you sure you want to remove this item from the cart?</h3>
+<div>
+    <h4>Cart Item</h4>
+    <hr />
+    <dl class="row">
+        <dt>Customer ID</dt>
+        <dd>@Model.CustomerID</dd>
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Quantity</dt>
+        <dd>@Model.Quantity</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-customerId="@Model.CustomerID" asp-route-itemId="@Model.ItemID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Remove from Cart" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/mike/Documents/Code/dotnet/InventoryManagement
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Cart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Cart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Cart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Cart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Cart/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +116,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZS9pbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Feedback/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Feedback/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Feedback/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Feedback/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Feedback/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -160,12 +200,152 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Membership/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Membership/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Membership/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Membership/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Membership/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Order/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/OrderItem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJJdGVtL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/OrderItem/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJJdGVtL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/OrderItem/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJJdGVtL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/OrderItem/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJJdGVtL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/OrderItem/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJJdGVtL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Payment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Payment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Payment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Payment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Payment/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Return/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV0dXJuL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Return/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV0dXJuL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Return/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV0dXJuL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Return/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV0dXJuL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Return/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV0dXJuL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Review/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Review/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Review/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Review/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Review/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3L2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shipment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcG1lbnQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shipment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcG1lbnQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shipment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcG1lbnQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shipment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcG1lbnQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Shipment/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcG1lbnQvaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mike/Documents/Code/dotnet/InventoryManagement/Views/Supplier/Create.cshtml]

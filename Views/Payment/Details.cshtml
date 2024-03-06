@@ -1,0 +1,21 @@
+@model Payment
+
+<h2>Payment Details</h2>
+<br>
+<div>
+    <h4>Payment</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Date</dt>
+        <dd>@Model.Date</dd>
+        <dt>Amount</dt>
+        <dd>@Model.Amount</dd>
+        <dt>Method</dt>
+        <dd>@Model.Method</dd>
+        <dt>Completed</dt>
+        <dd>@Model.Completed</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

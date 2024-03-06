@@ -1,0 +1,23 @@
+@model Return
+
+<h2>Delete Return</h2>
+<br>
+<h3>Are you sure you want to delete this return?</h3>
+<div>
+    <h4>Return</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Return Date</dt>
+        <dd>@Model.ReturnDate.ToShortDateString()</dd>
+        <dt>Return Reason</dt>
+        <dd>@Model.ReturnReason</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-orderId="@Model.OrderID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+@model Cart
+
+<h2>Edit Cart Item</h2>
+<br>
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="CustomerID"></label>
+        <input asp-for="CustomerID" class="form-control" readonly />
+        <span asp-validation-for="CustomerID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ItemID"></label>
+        <input asp-for="ItemID" class="form-control" readonly />
+        <span asp-validation-for="ItemID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </div>
+</form>
+<p><a asp-action="Index">Back to List</a></p>

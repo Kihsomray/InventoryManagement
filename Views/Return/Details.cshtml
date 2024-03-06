@@ -1,0 +1,17 @@
+@model Return
+
+<h2>Return Details</h2>
+<br>
+<div>
+    <h4>Return</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Return Date</dt>
+        <dd>@Model.ReturnDate.ToShortDateString()</dd>
+        <dt>Return Reason</dt>
+        <dd>@Model.ReturnReason</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

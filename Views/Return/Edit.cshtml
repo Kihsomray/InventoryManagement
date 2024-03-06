@@ -1,0 +1,21 @@
+@model Return
+
+<h2>Edit Return</h2>
+<br>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="OrderID" />
+    <div class="form-group">
+        <label asp-for="ReturnDate"></label>
+        <input asp-for="ReturnDate" type="date" class="form-control" />
+        <span asp-validation-for="ReturnDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ReturnReason"></label>
+        <input asp-for="ReturnReason" class="form-control" />
+        <span asp-validation-for="ReturnReason" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </div>
+</form>
+<p><a asp-action="Index">Back to List</a></p>

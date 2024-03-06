@@ -1,0 +1,31 @@
+@model List<Shipment>
+
+<h2>Shipments</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Shipping Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var shipment in Model) {
+            <tr>
+                <td>@shipment.OrderID</td>
+                <td>@shipment.Date</td>
+                <td>@shipment.Status</td>
+                <td>@shipment.ShippingNumber</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@shipment.OrderID">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@shipment.OrderID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@shipment.OrderID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Shipment</a></p>

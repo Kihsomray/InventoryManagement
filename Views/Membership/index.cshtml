@@ -1,0 +1,31 @@
+@model List<Membership>
+
+<h2>Memberships</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Membership Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var membership in Model) {
+            <tr>
+                <td>@membership.CustomerID</td>
+                <td>@membership.MembershipType</td>
+                <td>@membership.StartDate</td>
+                <td>@membership.EndDate</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@membership.CustomerID">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@membership.CustomerID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@membership.CustomerID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Membership</a></p>

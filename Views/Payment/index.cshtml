@@ -1,0 +1,33 @@
+@model List<Payment>
+
+<h2>Payments</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Completed</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model) {
+            <tr>
+                <td>@payment.OrderID</td>
+                <td>@payment.Date</td>
+                <td>@payment.Amount</td>
+                <td>@payment.Method</td>
+                <td>@payment.Completed</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@payment.OrderID">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@payment.OrderID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@payment.OrderID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Payment</a></p>

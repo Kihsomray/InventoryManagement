@@ -1,0 +1,19 @@
+@model Review
+
+<h2>Review Details</h2>
+<br>
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="row">
+        <dt>Customer ID</dt>
+        <dd>@Model.CustomerID</dd>
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Rating</dt>
+        <dd>@Model.Rating</dd>
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

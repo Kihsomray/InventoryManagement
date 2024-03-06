@@ -1,0 +1,29 @@
+@model List<Return>
+
+<h2>Returns</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Return Date</th>
+            <th>Return Reason</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var returnItem in Model) {
+            <tr>
+                <td>@returnItem.OrderID</td>
+                <td>@returnItem.ReturnDate.ToShortDateString()</td>
+                <td>@returnItem.ReturnReason</td>
+                <td>
+                    <a asp-action="Details" asp-route-orderId="@returnItem.OrderID">Details</a> |
+                    <a asp-action="Edit" asp-route-orderId="@returnItem.OrderID">Edit</a> |
+                    <a asp-action="Delete" asp-route-orderId="@returnItem.OrderID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Return</a></p>

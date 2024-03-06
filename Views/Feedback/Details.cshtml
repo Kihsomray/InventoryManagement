@@ -1,0 +1,19 @@
+@model Feedback
+
+<h2>Feedback Details</h2>
+<br>
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Rating</dt>
+        <dd>@Model.Rating</dd>
+        <dt>Title</dt>
+        <dd>@Model.Title</dd>
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

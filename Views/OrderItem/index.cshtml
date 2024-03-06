@@ -1,0 +1,30 @@
+@model List<InventoryManagement.Models.OrderItem>
+
+<h2>OrderItems</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Item ID</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orderItem in Model)
+        {
+            <tr>
+                <td>@orderItem.OrderID</td>
+                <td>@orderItem.ItemID</td>
+                <td>@orderItem.Quantity</td>
+                <td>
+                    <a asp-action="Details" asp-route-orderId="@orderItem.OrderID" asp-route-itemId="@orderItem.ItemID">Details</a> |
+                    <a asp-action="Edit" asp-route-orderId="@orderItem.OrderID" asp-route-itemId="@orderItem.ItemID">Edit</a> |
+                    <a asp-action="Delete" asp-route-orderId="@orderItem.OrderID" asp-route-itemId="@orderItem.ItemID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New OrderItem</a></p>

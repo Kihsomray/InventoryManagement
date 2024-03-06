@@ -1,0 +1,31 @@
+@model List<Review>
+
+<h2>Reviews</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Item ID</th>
+            <th>Rating</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model) {
+            <tr>
+                <td>@review.CustomerID</td>
+                <td>@review.ItemID</td>
+                <td>@review.Rating</td>
+                <td>@review.Description</td>
+                <td>
+                    <a asp-action="Details" asp-route-customerId="@review.CustomerID" asp-route-itemId="@review.ItemID">Details</a> |
+                    <a asp-action="Edit" asp-route-customerId="@review.CustomerID" asp-route-itemId="@review.ItemID">Edit</a> |
+                    <a asp-action="Delete" asp-route-customerId="@review.CustomerID" asp-route-itemId="@review.ItemID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Review</a></p>

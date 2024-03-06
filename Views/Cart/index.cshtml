@@ -1,0 +1,28 @@
+@model List<Cart>
+
+<h2>Shopping Cart</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Item ID</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cart in Model) {
+            <tr>
+                <td>@cart.CustomerID</td>
+                <td>@cart.ItemID</td>
+                <td>@cart.Quantity</td>
+                <td>
+                    <a asp-action="Details" asp-route-customerId="@cart.CustomerID" asp-route-itemId="@cart.ItemID">Details</a> |
+                    <a asp-action="Delete" asp-route-customerId="@cart.CustomerID" asp-route-itemId="@cart.ItemID">Remove</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Add Item to Cart</a></p>

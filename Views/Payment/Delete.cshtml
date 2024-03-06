@@ -1,0 +1,27 @@
+@model Payment
+
+<h2>Delete Payment</h2>
+<br>
+<h3>Are you sure you want to delete this payment?</h3>
+<div>
+    <h4>Payment</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Date</dt>
+        <dd>@Model.Date</dd>
+        <dt>Amount</dt>
+        <dd>@Model.Amount</dd>
+        <dt>Method</dt>
+        <dd>@Model.Method</dd>
+        <dt>Completed</dt>
+        <dd>@Model.Completed</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-id="@Model.OrderID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

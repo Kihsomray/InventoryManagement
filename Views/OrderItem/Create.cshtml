@@ -1,0 +1,29 @@
+@model OrderItem
+
+<h2>Create OrderItem</h2>
+<br>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="OrderID"></label>
+        <select asp-for="OrderID" asp-items="@(new SelectList(ViewBag.Orders, "OrderID", "OrderID"))" class="form-control">
+            <option value="">Select Order</option>
+        </select>
+        <span asp-validation-for="OrderID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ItemID"></label>
+        <select asp-for="ItemID" asp-items="@(new SelectList(ViewBag.Items, "ItemID", "Name"))" class="form-control">
+            <option value="">Select Item</option>
+        </select>
+        <span asp-validation-for="ItemID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+<p><a asp-action="Index">Back to List</a></p>

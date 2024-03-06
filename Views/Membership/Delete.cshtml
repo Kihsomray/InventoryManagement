@@ -1,0 +1,25 @@
+@model Membership
+
+<h2>Delete Membership</h2>
+<br>
+<h3>Are you sure you want to delete this membership?</h3>
+<div>
+    <h4>Membership</h4>
+    <hr />
+    <dl class="row">
+        <dt>Customer ID</dt>
+        <dd>@Model.CustomerID</dd>
+        <dt>Membership Type</dt>
+        <dd>@Model.MembershipType</dd>
+        <dt>Start Date</dt>
+        <dd>@Model.StartDate</dd>
+        <dt>End Date</dt>
+        <dd>@Model.EndDate</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-id="@Model.CustomerID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

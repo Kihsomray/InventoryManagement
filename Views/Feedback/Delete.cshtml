@@ -1,0 +1,25 @@
+@model Feedback
+
+<h2>Delete Feedback</h2>
+<br>
+<h3>Are you sure you want to delete this feedback?</h3>
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Rating</dt>
+        <dd>@Model.Rating</dd>
+        <dt>Title</dt>
+        <dd>@Model.Title</dd>
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-orderId="@Model.OrderID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

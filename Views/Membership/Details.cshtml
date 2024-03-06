@@ -1,0 +1,19 @@
+@model Membership
+
+<h2>Membership Details</h2>
+<br>
+<div>
+    <h4>Membership</h4>
+    <hr />
+    <dl class="row">
+        <dt>Customer ID</dt>
+        <dd>@Model.CustomerID</dd>
+        <dt>Membership Type</dt>
+        <dd>@Model.MembershipType</dd>
+        <dt>Start Date</dt>
+        <dd>@Model.StartDate</dd>
+        <dt>End Date</dt>
+        <dd>@Model.EndDate</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

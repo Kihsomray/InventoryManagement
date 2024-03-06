@@ -1,0 +1,19 @@
+@model Shipment
+
+<h2>Shipment Details</h2>
+<br>
+<div>
+    <h4>Shipment</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Date</dt>
+        <dd>@Model.Date</dd>
+        <dt>Status</dt>
+        <dd>@Model.Status</dd>
+        <dt>Shipping Number</dt>
+        <dd>@Model.ShippingNumber</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

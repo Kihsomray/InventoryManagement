@@ -1,0 +1,17 @@
+@model OrderItem
+
+<h2>OrderItem Details</h2>
+<br>
+<div>
+    <h4>OrderItem</h4>
+    <hr />
+    <dl class="row">
+        <dt>Order ID</dt>
+        <dd>@Model.OrderID</dd>
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Quantity</dt>
+        <dd>@Model.Quantity</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

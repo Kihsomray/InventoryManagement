@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/mike/Documents/Code/dotnet/InventoryManagement/wwwroot/images/database-logo.png",
+      "PackagePath": "staticwebassets/images/database-logo.png"
+    },
+    {
       "Id": "/Users/mike/Documents/Code/dotnet/InventoryManagement/wwwroot/images/inventory-management.png",
       "PackagePath": "staticwebassets/images/inventory-management.png"
     },
