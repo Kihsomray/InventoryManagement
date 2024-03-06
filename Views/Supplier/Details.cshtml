@@ -1,0 +1,21 @@
+@model InventoryManagement.Models.Supplier
+
+<h2>Supplier Details</h2>
+<br>
+<div>
+    <dl class="row">
+        <dt>Supplier ID</dt>
+        <dd>@Model.SupplierID</dd>
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+        <dt>Email</dt>
+        <dd>@Model.Email</dd>
+        <dt>Phone Number</dt>
+        <dd>@Model.PhoneNumber</dd>
+        <dt>Address</dt>
+        <dd>@Model.Address</dd>
+        <dt>Date Of Creation</dt>
+        <dd>@Model.DateOfCreation.ToShortDateString()</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

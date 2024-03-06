@@ -1,0 +1,25 @@
+@model Expense
+
+<h2>Expense Details</h2>
+<br>
+<div>
+    <h4>Expense</h4>
+    <hr />
+    <dl class="row">
+        <dt>Expense ID</dt>
+        <dd>@Model.ExpenseID</dd>
+        <dt>Location ID</dt>
+        <dd>@Model.LocationID</dd>
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Date</dt>
+        <dd>@Model.Date</dd>
+        <dt>Quantity</dt>
+        <dd>@Model.Quantity</dd>
+        <dt>Method</dt>
+        <dd>@Model.Method</dd>
+        <dt>Completed</dt>
+        <dd>@Model.Completed</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

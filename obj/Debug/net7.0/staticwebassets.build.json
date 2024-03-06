@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1RAwoV2aDRLKZH003AcLuMhZU2UQa7KUIYkQ/usEg0g=",
+  "Hash": "u33TsKf3iriVol6venLKereAZ5KvUMQNZaN8ueLGVIg=",
   "Source": "InventoryManagement",
   "BasePath": "_content/InventoryManagement",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/mike/Documents/Code/dotnet/InventoryManagement/wwwroot/images/inventory-management.png",
+      "SourceId": "InventoryManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mike/Documents/Code/dotnet/InventoryManagement/wwwroot/",
+      "BasePath": "_content/InventoryManagement",
+      "RelativePath": "images/inventory-management.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/inventory-management.png"
     },
     {
       "Identity": "/Users/mike/Documents/Code/dotnet/InventoryManagement/wwwroot/js/site.js",

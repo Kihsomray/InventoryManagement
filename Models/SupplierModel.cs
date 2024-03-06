@@ -2,22 +2,15 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace InventoryManagement.Models {
-
-    public class Employee {
+    public class Supplier {
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int EmployeeID { get; set; }
-
-        public int LocationID { get; set; }
-
-        [Required]
-        [MaxLength(255)]
-        public string FullName { get; set; }
+        public int SupplierID { get; set; }
 
         [Required]
         [MaxLength(100)]
-        public string Position { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [MaxLength(255)]
@@ -28,8 +21,14 @@ namespace InventoryManagement.Models {
         [MaxLength(20)]
         public string PhoneNumber { get; set; }
 
-        public Location Location { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Address { get; set; }
+
+        [Required]
+        [DataType(DataType.Date)]
+        public DateTime DateOfCreation { get; set; }
 
     }
-    
+
 }

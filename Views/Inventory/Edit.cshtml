@@ -1,0 +1,22 @@
+@model Inventory
+
+<h2>Edit Inventory Item</h2>
+<br>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="LocationID" />
+    <input type="hidden" asp-for="ItemID" />
+    <div class="form-group">
+        <label asp-for="ReorderQuantity"></label>
+        <input asp-for="ReorderQuantity" class="form-control" />
+        <span asp-validation-for="ReorderQuantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ReorderLevel"></label>
+        <input asp-for="ReorderLevel" class="form-control" />
+        <span asp-validation-for="ReorderLevel" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </div>
+</form>
+<p><a asp-action="Index">Back to List</a></p>

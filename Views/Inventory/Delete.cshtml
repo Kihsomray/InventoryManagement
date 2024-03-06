@@ -1,0 +1,25 @@
+@model Inventory
+
+<h2>Delete Inventory Item</h2>
+<br>
+<h3>Are you sure you want to delete this inventory item?</h3>
+<div>
+    <h4>Inventory Item</h4>
+    <hr />
+    <dl class="row">
+        <dt>Location ID</dt>
+        <dd>@Model.LocationID</dd>
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Reorder Quantity</dt>
+        <dd>@Model.ReorderQuantity</dd>
+        <dt>Reorder Level</dt>
+        <dd>@Model.ReorderLevel</dd>
+    </dl>
+</div>
+<form asp-action="Delete" asp-route-locationId="@Model.LocationID" asp-route-itemId="@Model.ItemID" method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Cancel</a>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+@model Item
+
+<h2>Item Details</h2>
+<br>
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="row">
+        <dt>Item ID</dt>
+        <dd>@Model.ItemID</dd>
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+        <dt>Category</dt>
+        <dd>@Model.Category</dd>
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+        <dt>Price</dt>
+        <dd>@Model.Price</dd>
+        <dt>Supplier ID</dt>
+        <dd>@Model.SupplierID</dd>
+    </dl>
+</div>
+<p><a asp-action="Index">Back to List</a></p>

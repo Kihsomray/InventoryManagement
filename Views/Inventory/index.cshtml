@@ -1,0 +1,31 @@
+@model List<Inventory>
+
+<h2>Inventory</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Location ID</th>
+            <th>Item ID</th>
+            <th>Reorder Quantity</th>
+            <th>Reorder Level</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var inventoryItem in Model) {
+            <tr>
+                <td>@inventoryItem.LocationID</td>
+                <td>@inventoryItem.ItemID</td>
+                <td>@inventoryItem.ReorderQuantity</td>
+                <td>@inventoryItem.ReorderLevel</td>
+                <td>
+                    <a asp-action="Details" asp-route-locationId="@inventoryItem.LocationID" asp-route-itemId="@inventoryItem.ItemID">Details</a> |
+                    <a asp-action="Edit" asp-route-locationId="@inventoryItem.LocationID" asp-route-itemId="@inventoryItem.ItemID">Edit</a> |
+                    <a asp-action="Delete" asp-route-locationId="@inventoryItem.LocationID" asp-route-itemId="@inventoryItem.ItemID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="Create">Create New Inventory Item</a></p>
