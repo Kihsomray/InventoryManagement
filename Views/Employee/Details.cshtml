@@ -1,34 +1,19 @@
-@model InventoryManagement.Models.Employee
-
 <h2>Employee Details</h2>
-
+<br>
 <div>
     <h4>Employee</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">Employee ID</dt>
-        <dd class="col-sm-10">@Model.EmployeeID</dd>
-
-        <dt class="col-sm-2">Full Name</dt>
-        <dd class="col-sm-10">@Model.FullName</dd>
-
-        <dt class="col-sm-2">Position</dt>
-        <dd class="col-sm-10">@Model.Position</dd>
-
-        <dt class="col-sm-2">Email</dt>
-        <dd class="col-sm-10">@Model.Email</dd>
-
-        <dt class="col-sm-2">Phone Number</dt>
-        <dd class="col-sm-10">@Model.PhoneNumber</dd>
-
-        <dt class="col-sm-2">Location</dt>
-        <dd class="col-sm-10">@Model.Location?.Name</dd>
-
-        <!-- Add other fields as needed -->
-
+        <dt>Employee ID</dt>
+        <dd>@Model.EmployeeID</dd>
+        <dt>Full Name</dt>
+        <dd>@Model.FullName</dd>
+        <dt>Position</dt>
+        <dd>@Model.Position</dd>
+        <dt>Email</dt>
+        <dd>@Model.Email</dd>
+        <dt>Phone Number</dt>
+        <dd>@Model.PhoneNumber</dd>
     </dl>
 </div>
-
-<p>
-    <a asp-action="Index">Back to List</a>
-</p>
+<p><a asp-action="Index">Back to List</a></p>

@@ -1,7 +1,7 @@
 @model List<Location>
 
 <h2>Location</h2>
-
+<br>
 <table class="table">
     <thead>
         <tr>
@@ -12,8 +12,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var location in Model)
-        {
+        @foreach (var location in Model) {
             <tr>
                 <td>@location.LocationID</td>
                 <td>@location.Name</td>
@@ -27,7 +26,4 @@
         }
     </tbody>
 </table>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<p><a asp-action="Create">Create New Location</a></p>

@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-public class Location
-{
+public class Location {
     
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
