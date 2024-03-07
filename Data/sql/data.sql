@@ -1,4 +1,4 @@
-USE inventorymanagement;
+USE InventoryManagement;
 
 /* Location */
 INSERT INTO Location (Name, Address) 

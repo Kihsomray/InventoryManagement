@@ -9,7 +9,9 @@ We are developing an Inventory Management System (IMS) for our online and in-per
 <img src="https://raw.githubusercontent.com/Kihsomray/InventoryManagement/master/wwwroot/images/inventory-management.png"><p></p>
 
 ## Installation
-1. Install [.NET core](https://learn.microsoft.com/en-us/dotnet/core/install/).
-2. Add a key in `Data > InventoryManagementContext.cs > _connectionString`.
-3. Import SQL data from comment in `Data > SQLStatements.cs` into the corresponding database.
-4. run `dotnet run` from the root directory of the project.
+1. Install [.NET 7 core](https://learn.microsoft.com/en-us/dotnet/core/install/).
+2. Add database information in `Data > InventoryManagementContext.cs > _connectionString`.
+3. Run SQL queries in `Data > sql` in your DBMS:
+    - first run `db.sql` to create the database and tables.
+    - second run `data.sql` to insert sample data.
+4. Run `dotnet run` from the root directory of the project.
