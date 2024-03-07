@@ -70,3 +70,8 @@
 /Users/mike/Documents/Code/dotnet/InventoryManagement/obj/Debug/net7.0/InventoryManagement.csproj.CopyComplete
 /Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/MySqlConnector.dll
 /Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/Humanizer.dll
+/Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/mike/Documents/Code/dotnet/InventoryManagement/bin/Debug/net7.0/System.CodeDom.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj": {}
+    "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj": {
+    "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj",
+        "projectUniqueName": "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj",
         "projectName": "InventoryManagement",
-        "projectPath": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj",
-        "packagesPath": "C:\\Users\\timra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\obj\\",
+        "projectPath": "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj",
+        "packagesPath": "/Users/mike/.nuget/packages/",
+        "outputPath": "/Users/mike/Documents/Code/dotnet/InventoryManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\timra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mike/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,11 +40,23 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.16, )"
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -67,24 +74,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
