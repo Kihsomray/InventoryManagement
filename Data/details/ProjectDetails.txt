@@ -1,4 +1,3 @@
-/*
 Inventory Management System - Proposal
 Timofej Ratsko and Michael Yarmoshik
 
@@ -51,4 +50,3 @@ Regarding discounts, each item should only have one discount. If multiple are cr
 When it comes to returns, each order can only be returned once. If it is returned multiple times the first return is the only one that will be processed.
 Taking the cart into account, there shouldn’t be two of the same item for one customer. Instead, the quantity should only increase if another one of that item is added to the cart.
 When hiring employees, there shouldn't be duplicate items if one gets rehired. Instead, the system should recognize the previous time the employee had worked there.
-*/

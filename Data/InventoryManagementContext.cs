@@ -4,7 +4,7 @@ using InventoryManagement.Models;
 namespace InventoryManagement.Data {
     public class InventoryManagementContext : DbContext {
 
-        readonly string _connectionString = "Server=mysql-314910d5-yarmoshikmike-0c69.a.aivencloud.com;Port=20457;Database=InventoryManagement;User=avnadmin;Password=AVNS_IcjyYlTwhCAwbGmZs72;";
+        readonly string _connectionString = "Server=localhost;Port=3306;Database=InventoryManagement;User=root;Password=password;";
         public DbSet<Location> Location { get; set; }
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Supplier> Supplier { get; set; }
