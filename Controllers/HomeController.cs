@@ -4,28 +4,42 @@ using InventoryManagement.Models;
 
 namespace InventoryManagement.Controllers;
 
-public class HomeController : Controller
-{
+/// <summary>
+/// Controller responsible for managing home-related views and actions.
+/// </summary>
+public class HomeController : Controller {
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
-    {
+    /// <summary>
+    /// Constructor for HomeController.
+    /// </summary>
+    /// <param name="logger">Logger instance for logging purposes.</param>
+    public HomeController(ILogger<HomeController> logger) {
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
+    /// <summary>
+    /// Action method for the home page.
+    /// </summary>
+    /// <returns>The view for the home page.</returns>
+    public IActionResult Index() {
         return View();
     }
 
-    public IActionResult Privacy()
-    {
+    /// <summary>
+    /// Action method for the privacy page.
+    /// </summary>
+    /// <returns>The view for the privacy page.</returns>
+    public IActionResult Privacy() {
         return View();
     }
 
+    /// <summary>
+    /// Action method for handling errors.
+    /// </summary>
+    /// <returns>The view for displaying errors.</returns>
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
+    public IActionResult Error() {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }

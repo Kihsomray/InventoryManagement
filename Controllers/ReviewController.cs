@@ -3,20 +3,37 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Data;
 using InventoryManagement.Models;
 
+/// <summary>
+/// Controller responsible for managing reviews.
+/// </summary>
 public class ReviewController : Controller {
     private readonly InventoryManagementContext _context;
 
+    /// <summary>
+    /// Constructor for ReviewController.
+    /// </summary>
+    /// <param name="context">Database context for review management.</param>
     public ReviewController(InventoryManagementContext context) {
         _context = context;
     }
 
     // GET: Review
+    /// <summary>
+    /// Displays the list of reviews.
+    /// </summary>
+    /// <returns>The view containing the list of reviews.</returns>
     public IActionResult Index() {
         var reviews = _context.Review.Include(r => r.Customer).Include(r => r.Item).ToList();
         return View(reviews);
     }
 
     // GET: Review/Details/1/2
+    /// <summary>
+    /// Displays details of a specific review.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <returns>The view containing details of the review.</returns>
     public IActionResult Details(int? customerId, int? itemId) {
         if (customerId == null || itemId == null) return NotFound();
         var review = _context.Review
@@ -28,6 +45,10 @@ public class ReviewController : Controller {
     }
 
     // GET: Review/Create
+    /// <summary>
+    /// Displays the form to create a new review.
+    /// </summary>
+    /// <returns>The view containing the form to create a new review.</returns>
     public IActionResult Create() {
         ViewBag.Customers = _context.Customer.ToList();
         ViewBag.Items = _context.Item.ToList();
@@ -35,6 +56,11 @@ public class ReviewController : Controller {
     }
 
     // POST: Review/Create
+    /// <summary>
+    /// Adds a new review to the database.
+    /// </summary>
+    /// <param name="review">The Review object to be added.</param>
+    /// <returns>Redirects to the Index action if successful.</returns>
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Create([Bind("CustomerID, ItemID, Rating, Description")] Review review) {
@@ -44,6 +70,12 @@ public class ReviewController : Controller {
     }
 
     // GET: Review/Edit/1/2
+    /// <summary>
+    /// Displays the form to edit an existing review.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <returns>The view containing the form to edit an existing review.</returns>
     public IActionResult Edit(int? customerId, int? itemId) {
         if (customerId == null || itemId == null) return NotFound();
         var review = _context.Review
@@ -57,6 +89,13 @@ public class ReviewController : Controller {
     }
 
     // POST: Review/Edit/1/2
+    /// <summary>
+    /// Updates an existing review in the database.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <param name="review">The Review object with updated information.</param>
+    /// <returns>Redirects to the Index action if successful.</returns>
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Edit(int customerId, int itemId, [Bind("CustomerID, ItemID, Rating, Description")] Review review) {
@@ -71,6 +110,12 @@ public class ReviewController : Controller {
     }
 
     // GET: Review/Delete/1/2
+    /// <summary>
+    /// Displays the confirmation page to delete a review.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <returns>The view containing the confirmation page.</returns>
     public IActionResult Delete(int? customerId, int? itemId) {
         if (customerId == null || itemId == null) return NotFound();
         var review = _context.Review
@@ -82,6 +127,12 @@ public class ReviewController : Controller {
     }
 
     // POST: Review/Delete/1/2
+    /// <summary>
+    /// Deletes a specified review from the database.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <returns>Redirects to the Index action if successful.</returns>
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public IActionResult DeleteConfirmed(int customerId, int itemId) {
@@ -91,6 +142,12 @@ public class ReviewController : Controller {
         return RedirectToAction(nameof(Index));
     }
 
+    /// <summary>
+    /// Checks if a specific review exists.
+    /// </summary>
+    /// <param name="customerId">ID of the customer who created the review.</param>
+    /// <param name="itemId">ID of the item associated with the review.</param>
+    /// <returns>True if the review exists, otherwise false.</returns>
     private bool ReviewExists(int customerId, int itemId) {
         return _context.Review.Any(r => r.CustomerID == customerId && r.ItemID == itemId);
     }
