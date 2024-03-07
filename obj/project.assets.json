@@ -3255,19 +3255,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mike/.nuget/packages/": {}
+    "C:\\Users\\timra\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj",
+      "projectUniqueName": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj",
       "projectName": "InventoryManagement",
-      "projectPath": "/Users/mike/Documents/Code/dotnet/InventoryManagement/InventoryManagement.csproj",
-      "packagesPath": "/Users/mike/.nuget/packages/",
-      "outputPath": "/Users/mike/Documents/Code/dotnet/InventoryManagement/obj/",
+      "projectPath": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\InventoryManagement.csproj",
+      "packagesPath": "C:\\Users\\timra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\timra\\Desktop\\UW\\TCSS445\\InventoryManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mike/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\timra\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3285,6 +3285,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3315,6 +3320,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.16, 7.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.16, 7.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.16, 7.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.16, 7.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3323,7 +3346,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

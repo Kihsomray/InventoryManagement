@@ -1,3 +1,5 @@
+USE inventorymanagement;
+
 /* Location */
 INSERT INTO Location (Name, Address) 
 VALUES 

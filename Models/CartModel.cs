@@ -1,10 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryManagement.Models
-{
-    public class Cart
-    {
+namespace InventoryManagement.Models {
+    public class Cart {
         [Display(Name = "Customer ID")]
         [Required(ErrorMessage = "Customer ID is required")]
         public int CustomerID { get; set; }
