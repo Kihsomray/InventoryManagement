@@ -4,6 +4,7 @@ using InventoryManagement.Data;
 using InventoryManagement.Models;
 
 public class PaymentController : Controller {
+    
     private readonly InventoryManagementContext _context;
 
     public PaymentController(InventoryManagementContext context) {

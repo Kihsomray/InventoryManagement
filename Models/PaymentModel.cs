@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,7 +6,7 @@ namespace InventoryManagement.Models {
     public class Payment {
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)] // Assuming OrderID is not auto-generated
+        [ForeignKey("Order")]
         public int OrderID { get; set; }
 
         [Required]
